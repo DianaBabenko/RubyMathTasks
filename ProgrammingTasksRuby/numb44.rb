@@ -1,9 +1,9 @@
-def change(x, y, z)
-  if x + y < 1
-
-  elsif y + z < 1
-
-  else z+x<1
-
+def checkNumb(x, y, z)
+  if x != y && y != z && z != x
+    puts "x + y + z = #{x+y+z}"
   end
 end
+
+checkNumb(6, 7,8)
+
+

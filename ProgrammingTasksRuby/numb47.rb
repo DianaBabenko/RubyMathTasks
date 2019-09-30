@@ -1,5 +1,5 @@
 def triangle(a, b, c )
-  if a +b >c and b+c>a and c+a>b
+  if a + b > c and b + c >a and c + a > b
     puts "Існує"
   elsif a < 0 or b < 0
     a = a + 0.5

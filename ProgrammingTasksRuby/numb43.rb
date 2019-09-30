@@ -15,4 +15,4 @@ def square(a, b, c)
     end
   end
 end
-square(2, 4, -2)
+square(-2, 4, -29)
