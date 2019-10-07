@@ -6,7 +6,7 @@ def checkNumb(r,s)
   elsif a % b == s
     puts "Остаток равен числу #{s}"
   else
-    puts "Остаток не равен числам"
+    puts "Остаток не равен числам #{r} и #{s}"
   end
 end
 

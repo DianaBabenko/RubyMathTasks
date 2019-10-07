@@ -6,5 +6,4 @@ s = gets.i
 t = gets.i
 u = gets.i
 
-if (s != t)
-
+#if (s != t);
