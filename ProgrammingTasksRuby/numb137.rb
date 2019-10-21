@@ -1,14 +1,20 @@
-n = 9 #b
-for i in i..n
-  res = n * i
+#a
+def task137a(n, a)
+  for i in 1..n
+    puts "a) #{a}"
+    a += a
+  end
 end
+task137a(3, 4)
 
-puts (res)
-
-n = 7 #c
-for i in 0..n
-  res += (a+i).abs
+#v
+def task137v(n, a)
+  for i in 1..n
+    puts "b) #{a}"
+    a += a.abs
+  end
 end
+task137v(4, 12)
 
 
 

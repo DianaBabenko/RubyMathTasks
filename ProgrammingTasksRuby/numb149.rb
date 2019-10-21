@@ -3,8 +3,7 @@ def numbers()
   while x <= 1
   y = 4*(x**3) - 2 * (x**2) + 5
   x +=0.1
-  puts y
+  puts "x= #{x} y= #{y}"
   end
 end
-
 numbers()

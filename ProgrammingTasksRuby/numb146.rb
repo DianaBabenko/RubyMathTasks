@@ -3,7 +3,7 @@ def numbersABN(a, b, n)
   if a!=b
     for i in 0..n
     r = a + i*h
-    puts (r)
+    puts "r#{i} = #{r}"
     end
   end
 end
