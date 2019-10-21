@@ -2,7 +2,7 @@ n = gets.to_i
 
 result = 2**n
 
-puts "2**n = #{result}"
+puts "a) #{result}"
 
 #b
 def task_77_b(n)
@@ -10,44 +10,44 @@ def task_77_b(n)
   for i in 1...n
     n *= i
   end
-  puts n
+  puts "b) #{n}"
 
 end
 
 task_77_b(6)
 
-#c
-def task_77_c(n)
-  q=1
+#g
+def task_77_g(n)
+  result = 0
+  x = 0
   for i in 1..n
-    i *= 1.0 + (1.0/i**2.0)
+    x += Math.sin(i)
+    result += (1/x)
   end
-  p i
+  puts "g) #{result}"
 end
 
-task_77_c(8.0)
+task_77_g(6.0)
 
 #d
-def task_77_d(n)
-  x=0
-  for i in 1..n
-    i += Math.sin(k)
-    for k in k..n
-      x +=1/Math.sin(k)
-    end
+def task_77_d(y)
+  result_d = 0
+  for i in 1...y
+    result_d = Math.sqrt(2 + result_d)
   end
-  p x
+  puts "d) #{result_d}"
 end
 
-task_77_d(6.0)
+task_77_d(3)
 
-#e
-def task_77_e(n)
-  res = 0
+
+#zh
+def task_77_zh(n)
+  res_zh = 0
   for i in 1..n
-    res += (2.0 + res)**1.0/2.0
-    p res
+    res_zh = Math.sqrt(3*(i - 1) + Math.sqrt(3*i + res_zh))
   end
+  puts "zh) #{res_zh}"
 end
 
-task_77_e(4.0)
+task_77_zh(4.0)

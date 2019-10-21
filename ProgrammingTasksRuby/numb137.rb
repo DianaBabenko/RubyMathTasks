@@ -7,7 +7,7 @@ puts (res)
 
 n = 7 #c
 for i in 0..n
-  res |+= (a+i).abs
+  res += (a+i).abs
 end
 
 

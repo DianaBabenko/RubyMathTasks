@@ -1,13 +1,33 @@
-a = 8
-n = 3
-
+#a
+ def task78a(a, n)
 result = a**n
-puts (result)
+puts "a) #{result}"
+ end
 
+ task78a(8, 3)
+
+=begin
 #b
-a1 = 7
+ def task78b(a)
+   a = a+1
+   resultb = a
+   for i in 1...n
+     resultb += (1/a)
+   end
+ end
 for i in 0..n
-  a1 *= a+i
+  b *= b+i
 end
 
-puts (a1)
+puts "b) #{result}"
+=end
+
+def task78d(a, n)
+  result = a
+  for i in 1...n
+    result *= a - i * n
+  end
+  puts "d) #{result}"
+end
+
+task78d(7,3)
