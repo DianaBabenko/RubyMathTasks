@@ -1,21 +1,23 @@
-def numbA(n)
-  for a in 1..n
-    if a % 5 == 0
-      b += b
-      puts "a % 5 == 0 :: #{b} :: #{a}"
+def task181(n)
+  b = 0
+  c = 0
+  d = 0
+  for i in 1..n
+    if i % 5 == 0
+      b += i
+      puts "i % 5 == 0 :: #{b} :: #{i}"
     end
-    if (a % 3 == 0) && a < 0
-      c += c
-      puts "a % 3 == 0 && a < 0  :: #{c} :: #{a} "
+    if i % 3 == 0
+      c += i
+      puts "i % 3 == 0 :: #{c} :: #{i} "
     end
-    if (a.abs) < a**2
-      d += d
-      puts "a.abs < i**2  :: #{d}  :: #{a}"
-    else puts "#{a}"
+    if i.abs < i**2
+      d = d + i
+      puts "i.abs < i**2  :: #{d}  :: #{i}"
     end
   end
 end
 
-numbA(25)
+task181(25)
 #1-4 6-10 (40) / 11 12
 #5  пропуск
